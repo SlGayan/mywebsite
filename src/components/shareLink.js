@@ -16,7 +16,7 @@ function FacebookShareButton() {
       };
   
       // Open the Facebook Share Dialog
-      ShareDialog(shareContent);
+      handleShare(shareContent);
     };
   
     return (
