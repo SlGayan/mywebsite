@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import FacebookShareButton from './components/shareLink';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         >
           ashoka gayan
         </a>
+        <div>
+          <FacebookShareButton/>
+        </div>
       </header>
     </div>
   );
