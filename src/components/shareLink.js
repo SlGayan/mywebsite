@@ -18,7 +18,7 @@ function FacebookShareButton() {
         </Helmet>
   
         <FacebookProvider appId="723297579521532">
-          <ShareButton href="./shareLink.js" quote="Your quote" hashtag="#YourHashtag" onClick={handleShare}>
+          <ShareButton href="../../logo192.png" quote="Your quote" hashtag="#YourHashtag" >
             Share on Facebook
           </ShareButton>
         </FacebookProvider>
