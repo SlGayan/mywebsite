@@ -9,7 +9,7 @@ function FacebookShareButton() {
       // Customize the content to be shared
       const shareContent = {
         method: 'feed',
-        link: 'URL_TO_YOUR_PAGE',
+        link: 'https://main.d34lm2jphtlvw6.amplifyapp.com/',
         caption: 'Your caption',
         picture: '../../logo192.png',
         description: 'Your description',
@@ -26,12 +26,11 @@ function FacebookShareButton() {
           <meta property="og:title" content="Your Open Graph Title" />
           <meta property="og:description" content="Your Open Graph Description" />
           <meta property="og:image" content="../../logo192.png" />
-          <meta property="og:image:width" content="600" />
-          <meta property="og:image:height" content="400" />
+         
         </Helmet>
   
         <FacebookProvider appId="723297579521532">
-          <ShareButton href="URL_TO_YOUR_PAGE" quote="Your quote" hashtag="#YourHashtag" onClick={handleShare}>
+          <ShareButton href="https://main.d34lm2jphtlvw6.amplifyapp.com/" quote="Your quote" hashtag="#YourHashtag" onClick={handleShare}>
             Share on Facebook
           </ShareButton>
         </FacebookProvider>
