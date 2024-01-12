@@ -5,19 +5,7 @@ import { FacebookProvider, ShareButton, ShareDialog } from 'react-facebook';
 
 
 function FacebookShareButton() {
-    const handleShare = () => {
-      // Customize the content to be shared
-      const shareContent = {
-        method: 'feed',
-        link: './shareLink.js',
-        caption: 'Your caption',
-        picture: '../../logo192.png',
-        description: 'Your description',
-      };
-  
-      // Open the Facebook Share Dialog
-      handleShare(shareContent);
-    };
+    
   
     return (
       <div>
