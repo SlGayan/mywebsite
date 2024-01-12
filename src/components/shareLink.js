@@ -9,7 +9,7 @@ function FacebookShareButton() {
       // Customize the content to be shared
       const shareContent = {
         method: 'feed',
-        link: 'https://main.d34lm2jphtlvw6.amplifyapp.com/',
+        link: './shareLink.js',
         caption: 'Your caption',
         picture: '../../logo192.png',
         description: 'Your description',
@@ -30,7 +30,7 @@ function FacebookShareButton() {
         </Helmet>
   
         <FacebookProvider appId="723297579521532">
-          <ShareButton href="https://main.d34lm2jphtlvw6.amplifyapp.com/" quote="Your quote" hashtag="#YourHashtag" onClick={handleShare}>
+          <ShareButton href="./shareLink.js" quote="Your quote" hashtag="#YourHashtag" onClick={handleShare}>
             Share on Facebook
           </ShareButton>
         </FacebookProvider>
