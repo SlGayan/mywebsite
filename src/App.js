@@ -1,29 +1,23 @@
+// App.js
+import React from 'react';
+import ShareImage from './components/facebookshare';
 import logo from './logo.svg';
-import './App.css';
-import FacebookShareButton from './components/shareLink';
 
-function App() {
+const App = () => {
+  const title = 'Example Share Image';
+  const description = 'This is an example of sharing an image from a React app to Facebook.';
+  const url = 'https://your-react-app-url.com';
+  const image = 'https://your-react-app-url.com/your-image-url.jpg';
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          ashoka gayan
-        </a>
-        <div>
-          <FacebookShareButton/>
-        </div>
-      </header>
+      <ShareImage url={url} title={title} description={description} image={image} />
+    <div>
+    <img src={logo} className="App-logo" alt="logo" />
+     
+    </div>
     </div>
   );
-}
+};
 
 export default App;
