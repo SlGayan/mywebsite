@@ -1,22 +1,28 @@
-// App.js
+// src/App.js
 import React from 'react';
-import ShareImage from './components/facebookshare';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
+import Home from './components/Home';
+import About from './components/about';
 
 const App = () => {
-  const title = 'Example Share Image';
-  const description = 'This is an example of sharing an image from a React app to Facebook.';
-  const url = 'https://main.d34lm2jphtlvw6.amplifyapp.com/';
-  const image = 'https://main.d34lm2jphtlvw6.amplifyapp.com/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg';
-
   return (
-    <div className="App">
-      <ShareImage url={url} title={title} description={description} image={image} />
-    <div>
-    <img src={logo} className="App-logo" alt="logo" />
-     
-    </div>
-    </div>
+    <Router>
+      <div>
+        <Helmet>
+          <meta property="og:url" content="https://your-website-url.com" />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="Your Website Title" />
+          <meta property="og:description" content="Description of your website" />
+          <meta property="og:image" content="https://your-website-url.com/path-to-your-image.jpg" />
+        </Helmet>
+
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/about" component={About} />
+        </Switch>
+      </div>
+    </Router>
   );
 };
 
