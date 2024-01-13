@@ -6,8 +6,8 @@ import logo from './logo.svg';
 const App = () => {
   const title = 'Example Share Image';
   const description = 'This is an example of sharing an image from a React app to Facebook.';
-  const url = 'https://your-react-app-url.com';
-  const image = 'https://your-react-app-url.com/your-image-url.jpg';
+  const url = 'https://main.d34lm2jphtlvw6.amplifyapp.com/';
+  const image = 'https://main.d34lm2jphtlvw6.amplifyapp.com/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg';
 
   return (
     <div className="App">
