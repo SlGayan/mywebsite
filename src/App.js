@@ -1,29 +1,33 @@
-// src/App.js
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import logo from './logo.svg';
+import './App.css';
 import { Helmet } from 'react-helmet';
-import Home from './components/Home';
-import About from './components/about';
-
-const App = () => {
+function App() {
   return (
-    <Router>
-      <div>
+    <div className="App">
+      <header className="App-header">
         <Helmet>
-          <meta property="og:url" content="https://your-website-url.com" />
-          <meta property="og:type" content="website" />
-          <meta property="og:title" content="Your Website Title" />
-          <meta property="og:description" content="Description of your website" />
-          <meta property="og:image" content="https://your-website-url.com/path-to-your-image.jpg" />
+          <title>home page</title>
+          <meta property="og:title" content="Your Page Title" />
+        <meta property="og:description" content="Description of your page" />
+        <meta property="og:image" content="URL to your image" />
+        <meta property="og:url" content="https://main.d34lm2jphtlvw6.amplifyapp.com/" />
+        <meta property="og:type" content="website" />
         </Helmet>
-
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
-        </Switch>
-      </div>
-    </Router>
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+          ashoka gayan
+        </a>
+      </header>
+    </div>
   );
-};
-
+}
 export default App;
