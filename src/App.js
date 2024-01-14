@@ -9,7 +9,7 @@ function App() {
           <title>home page</title>
           <meta property="og:title" content="Your Page Title" />
         <meta property="og:description" content="Description of your page" />
-        <meta property="og:image" content="URL to your image" />
+        <meta property="og:image" content="https://main.d34lm2jphtlvw6.amplifyapp.com/logo192.png" />
         <meta property="og:url" content="https://main.d34lm2jphtlvw6.amplifyapp.com/" />
         <meta property="og:type" content="website" />
         </Helmet>
