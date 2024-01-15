@@ -10,10 +10,10 @@ const App = () => {
   return (
     <div className=''>
      <div className='App'>
-     <img src='../logo512.png'  alt="A beautiful image"  />
+     <img src='../logo512.png' className='photo'  alt="A beautiful image"  />
      </div>
      <div>
-      <FacebookShare title={title}   url={url} />
+      <FacebookShare title={title} image={image} description={description} url={url} />
     </div>
     </div>
   );
