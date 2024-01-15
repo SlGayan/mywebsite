@@ -11,6 +11,9 @@ const FacebookShare = ({ title, image, description, url }) => {
         <meta property="og:description" content={description} />
         <meta property="og:url" content={url} />
         <meta property="og:image:secure" content={image}/>
+        <meta property="og:image:width" content="2500"/> 
+        <meta property="og:image:height" content="1330"/>
+
       </Helmet>
       <div>
         <a
