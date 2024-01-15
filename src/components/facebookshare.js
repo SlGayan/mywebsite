@@ -6,10 +6,7 @@ const FacebookShare = ({ title, image, description, url }) => {
     <>
       <Helmet>
         <title>{title}</title>
-        <meta property="og:title" content={title} />
-        <meta property="og:image" content={image} />
-        <meta property="og:description" content={description} />
-        <meta property="og:url" content={url} />
+      
       </Helmet>
       <div>
         <a
