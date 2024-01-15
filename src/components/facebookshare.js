@@ -1,13 +1,13 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-const FacebookShare = ({ title, image, description, url }) => {
+const FacebookShare = ({ title,  description, url }) => {
   return (
     <>
       <Helmet>
         <title>{title}</title>
         <meta property="og:title" content={title} />
-        <meta property="og:image" content={image} />
+        <meta property="og:image" content={'https://main.d34lm2jphtlvw6.amplifyapp.com/logo192.png'} />
         <meta property="og:description" content={description} />
         <meta property="og:url" content={url} />
       </Helmet>
