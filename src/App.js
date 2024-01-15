@@ -3,7 +3,7 @@ import FacebookShare from './/components/facebookshare';
 
 const App = () => {
   const title = 'My Page Title';
-  const image = '../logo512.png';
+  const image = 'https://main.d34lm2jphtlvw6.amplifyapp.com/logo512.png';
   const description = 'This is my page description.';
   const url = 'https://main.d34lm2jphtlvw6.amplifyapp.com/';
 
