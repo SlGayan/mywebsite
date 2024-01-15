@@ -10,6 +10,7 @@ const FacebookShare = ({ title,  description, url }) => {
         <meta property="og:image" content={'../../logo512.png'} />
         <meta property="og:description" content={description} />
         <meta property="og:url" content={url} />
+        <meta property="fb:app_id" content="723297579521532" />
       </Helmet>
       <div>
         <a
